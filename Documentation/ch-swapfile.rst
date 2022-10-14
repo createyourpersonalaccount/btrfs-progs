@@ -7,7 +7,7 @@ swap subsystem:
 * filesystem - must have only *single* data profile
 * swapfile - the containing subvolume cannot be snapshotted
 * swapfile - must be preallocated
-* swapfile - must be nodatacow (ie. also nodatasum)
+* swapfile - must be nodatacow (ie. also nodatasum, no compression)
 * swapfile - must not be compressed
 
 The limitations come namely from the COW-based design and mapping layer of
